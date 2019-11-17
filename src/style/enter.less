@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background: rgb(238, 223, 223);
+}
+.wrapper{
+    width: 92vw;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 68px;
+    background: #fff;
+    img{
+        height: 68px;
+    }
+    >div>span{
+        font-size: 24px;
+        display: inline-block;
+        border-left: 1px solid #888;
+        padding-left: 24px;
+        position: absolute;
+        top: 21px;
+        color: #444;
+    }
+}
+main{
+    width: 520px;
+    height: 480px;
+    background: #fff;
+    border-radius: 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50% ,14%);
+    box-shadow: 1px 1px 6px 1px #666;
+
+}
+.top{
+    >.top-title{
+        position: relative;
+        >div{
+            height: 58px;
+            >a{
+                float: left;
+                width: 260px;
+                height: 58px;
+                text-align: center;
+                line-height: 58px;
+                font-size: 20px;
+                color: #000;
+            }
+            >.active{
+                background: rgb(224, 223, 223);
+                color: #666;
+            }
+        }
+
+        >div>.text{
+            // position: absolute;
+            // top: 58px;
+            >div{
+                width: 384px;
+                height: 32px;
+                border: 1px solid #666;
+                margin: 28px 59px;
+               padding: 8px;
+               color: #999;
+               line-height: 32px;
+               >input{
+                   float: right;
+                    height: 28px;
+                    width: 340px;
+                    font-size: 16px;
+                    border: none;
+                    outline: none;
+               }
+               >span{
+                   font-size: 28px;
+               }
+            }
+        }
+
+        >div>.top-right{
+             position: absolute;
+             top: 58px;
+            >div:nth-of-type(2){
+                position: relative;
+                >input{
+                    width: 220px;
+                    position: absolute;
+                   left: 52px;
+                }
+                >a{
+                    font-size: 18px;
+                    color: #000;
+                    font-weight: 100;
+                    float: right;
+                    border-left:1px solid #666 ;
+                    padding-left:16px ;
+                    padding-right: 8px;
+                    line-height: 48px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+    
+}
+
+.bot{
+    position: absolute;
+    bottom: 36px;
+    left: 52px;
+    >p:first-of-type{
+        text-align: center;
+        line-height: 36px;
+        >a{
+            width: 400px;
+            height: 38px;
+            background: #468bf3;
+            display: inline-block;
+            border-radius: 3px;
+            color: #fff;
+        }
+    }
+    >p:nth-of-type(2){
+        font-size: 18px;
+        color: #468bf3;
+        padding: 8px 0;
+        >span{
+            float: right;
+            padding-right: 12px;
+            >a{
+                color: #468bf3;
+                font-size: 14px; 
+                
+            }
+        }
+        
+    }
+    >ul{
+        width: 420px;
+        padding: 42px 0;
+        position: relative;
+        >div{
+            float: left;
+            width: 160px;
+            border-top: 1px solid #888;
+        }
+        >div:nth-of-type(3){
+            float: right;
+        }
+        >div:nth-of-type(2){
+            width: 100px;
+            border: none;
+            text-align: center;
+            font-size: 12px;
+            color: #666;
+            position: absolute;
+            top: 32px;
+            left: 38%;
+        }
+    }
+    >div{
+        >a{
+            font-size: 38px;
+            margin: 32px;
+        }
+        >a:first-of-type{
+           color: rgb(73, 156, 224);
+        }
+        >a:nth-of-type(2){
+            color: rgb(20, 230, 90);
+         }
+         >a:nth-of-type(3){
+            color: rgb(211, 79, 39);
+         }
+         >a:nth-of-type(4){
+            color: rgb(37, 125, 197);
+         }
+    }
+}

@@ -35,13 +35,16 @@
     float: left;
     >li{
         float: left;
-        width: 145px;
+       
         >a{
+            width: 145px;
             height: 36px;
             color: #fff;
             padding: 0;
             text-align: center;
             line-height: 36px;
+            text-decoration: none;
+            display: inline-block;
         }
         >a:hover{
             background: rgb(99, 92, 92);
@@ -56,20 +59,26 @@
     >li{
         float: left;
         width: 120px;
-        
+        text-align: center;
         >a{
+            
             height: 36px;
             color: #fff;
             padding: 0;
-            text-align: center;
+            
             line-height: 36px;
+            text-decoration: none;
+            display: inline-block;
             >span>span{
                 padding-left: 10px;
                 line-height: 18px;
             }
         }
-        >a:hover{
+        &:hover{
             background: rgb(99, 92, 92);
+            &:first-of-type{
+                background: rgb(49, 10, 10);
+            }
         }
         
     }

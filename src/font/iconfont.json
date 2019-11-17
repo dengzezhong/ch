@@ -55,6 +55,13 @@
       "unicode_decimal": 58884
     },
     {
+      "icon_id": "2291103",
+      "name": "人",
+      "font_class": "ren-copy-copy",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
       "icon_id": "2460497",
       "name": "向上箭头",
       "font_class": "xiangshangjiantouarrowup",
@@ -74,6 +81,20 @@
       "font_class": "baoxiu",
       "unicode": "e6cd",
       "unicode_decimal": 59085
+    },
+    {
+      "icon_id": "2759922",
+      "name": "锁",
+      "font_class": "suo2",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "3090173",
+      "name": "锁",
+      "font_class": "suo5",
+      "unicode": "e683",
+      "unicode_decimal": 59011
     },
     {
       "icon_id": "3208988",
@@ -146,6 +167,27 @@
       "unicode_decimal": 58897
     },
     {
+      "icon_id": "5533016",
+      "name": "锁",
+      "font_class": "suo3",
+      "unicode": "e674",
+      "unicode_decimal": 58996
+    },
+    {
+      "icon_id": "6539403",
+      "name": "锁",
+      "font_class": "suo",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "7431995",
+      "name": "锁",
+      "font_class": "Rectangle",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    },
+    {
       "icon_id": "7489928",
       "name": "分享",
       "font_class": "fenxiang",
@@ -174,6 +216,13 @@
       "unicode_decimal": 58890
     },
     {
+      "icon_id": "7922161",
+      "name": "人",
+      "font_class": "ren",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    },
+    {
       "icon_id": "8075090",
       "name": "手机",
       "font_class": "shouji",
@@ -200,6 +249,20 @@
       "font_class": "zhifubao",
       "unicode": "e61a",
       "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "9364233",
+      "name": "锁",
+      "font_class": "suo4",
+      "unicode": "e692",
+      "unicode_decimal": 59026
+    },
+    {
+      "icon_id": "9397029",
+      "name": "锁",
+      "font_class": "suo1",
+      "unicode": "e627",
+      "unicode_decimal": 58919
     },
     {
       "icon_id": "9577440",

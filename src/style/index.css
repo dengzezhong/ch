@@ -31,14 +31,16 @@
 }
 .head-left > li {
   float: left;
-  width: 145px;
 }
 .head-left > li > a {
+  width: 145px;
   height: 36px;
   color: #fff;
   padding: 0;
   text-align: center;
   line-height: 36px;
+  text-decoration: none;
+  display: inline-block;
 }
 .head-left > li > a:hover {
   background: #635c5c;
@@ -52,20 +54,25 @@
 .head-rigth > li {
   float: left;
   width: 120px;
+  text-align: center;
 }
 .head-rigth > li > a {
   height: 36px;
   color: #fff;
   padding: 0;
-  text-align: center;
   line-height: 36px;
+  text-decoration: none;
+  display: inline-block;
 }
 .head-rigth > li > a > span > span {
   padding-left: 10px;
   line-height: 18px;
 }
-.head-rigth > li > a:hover {
+.head-rigth > li:hover {
   background: #635c5c;
+}
+.head-rigth > li:hover:first-of-type {
+  background: #310a0a;
 }
 .head-rigth > li:first-of-type {
   line-height: 36px;

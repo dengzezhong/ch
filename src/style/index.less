@@ -7,6 +7,9 @@
 .width(@num){
     width: @num;
 }
+// body{
+//     padding: 0px 12px;
+// }
 // 版心
 .wrapper{
    .width(1170px);
@@ -24,7 +27,7 @@
     }
 // header start
 .head{
-    .width(1366px);
+    
     height: 36px;
     background: rgb(49, 10, 10);
     li{
@@ -98,7 +101,6 @@
 // nav start
 nav{
     height: 78px;
-    .width(1366px);
     .wrapper>.logo{
         float: left;
         position: absolute;
@@ -239,7 +241,7 @@ nav>.wrapper>.nav>div:hover>a~ul{
             width: 226px;
             position: absolute;
             top: 0;
-            left: 98px;
+            left: 90px;
             >div{
                 height: 60px;
                 line-height: 60px;
@@ -413,7 +415,7 @@ nav>.wrapper>.nav>div:hover>a~ul{
                 background: #fff;
                 float: left;
                 width: 228px;
-                padding: 49px 20px;
+                padding: 24px 20px;
                 margin-left: 8px;
                 margin-bottom: 7px;
                 text-align: center;
@@ -423,8 +425,13 @@ nav>.wrapper>.nav>div:hover>a~ul{
                 >a:nth-of-type(2){
                     line-height: 26px;
                     margin:10px 0 ;
+                    width: 208px;
                    text-decoration: none;
-                   color: #000;
+                   color: rgb(10, 10, 10);
+                   white-space: nowrap;
+                   overflow: hidden;
+                   text-overflow: ellipsis;
+                   display: inline-block;
                 }
                 >p{
                     color: #666;
@@ -652,7 +659,7 @@ nav>.wrapper>.nav>div:hover>a~ul{
 }
 
 // 固定导航
-.nav-left{
+.fixed-nav-left{
     position: fixed;
     top: 32%;
     left: 6px;
@@ -666,24 +673,25 @@ nav>.wrapper>.nav>div:hover>a~ul{
         text-align: center;
         line-height: 48px;
         border-bottom: 1px solid #888;
-        &:nth-of-type(1){
-            background: #f00;
-            color: #fff;
-            border: none;
-        }
+        
         &:hover{
             background: #f00;
             color: #fff;
             border: none;
         }
     }
+    .fixed-color{
+        background: #f00;
+            color: #fff;
+            border: none;
+    }
     
 }
 
-.nav-right{
+.fixed-nav-right{
     position: fixed;
     top: 32%;
-    right: -1308px;
+    right: 12px;
     >a{
         display: inline-block;
         width: 48px;
@@ -691,7 +699,21 @@ nav>.wrapper>.nav>div:hover>a~ul{
         text-decoration: none;
         background: #888;
         text-align: center;
-        line-height: 48px;
+        // line-height: 48px;
         border-bottom: 1px solid #999;
+        position: relative;
+        &>span{
+            float: left;
+            color: rgb(226, 224, 224);
+            font-size: 24px;
+            font-weight: 100;
+            text-align: center;
+            // display: inline-block;
+            &:last-of-type{
+                position: absolute;
+                top: 12px;
+                right: 12px;
+            }
+        }
     }
 }

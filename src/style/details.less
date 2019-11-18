@@ -7,6 +7,9 @@
 .width(@num){
     width: @num;
 }
+html,body{
+    overflow-x: hidden;
+}
 // 版心
 .wrapper{
    .width(1170px);
@@ -237,6 +240,7 @@ nav>.wrapper>.nav>div:hover>a~ul{
     .banner-nav{
         display: none;
         >span{
+            z-index: 999;
         height: 500px;
         width: 226px;
         background: #000;
@@ -250,6 +254,7 @@ nav>.wrapper>.nav>div:hover>a~ul{
             position: absolute;
             top: 78px;
             left: -6px;
+            z-index: 999;
             >div{
                 height: 60px;
                 line-height: 60px;
@@ -340,9 +345,12 @@ nav>.wrapper>.nav>div:hover>a~ul{
 
 // 详细页主内容 main start
 .details-main{
-    background: rgb(199, 197, 197);
+    background: rgb(236, 235, 235);
     padding:18px;
+    padding-bottom: 20px;
     >.wrapper>.details-main-top{
+        position: relative;
+        height: 600px;
         &::after{
             content: '';
             display: block;
@@ -351,28 +359,247 @@ nav>.wrapper>.nav>div:hover>a~ul{
             overflow: hidden;
             clear: both;
         }
-        >.big{
-            float: left;
-            width: 380px;
-            height: 400px;
+        >div{
+            position: relative;
+        }
+        >div>.big{
+            // float: left;
+            width: 480px;
+            height: 480px;
             background: #fff;
             border: 1px solid #999;
+           
         }
-        >.big-left{
+        >div>.big-left{
+            overflow: hidden;
             >img{
-                width: 380px;
+                width: 480px;
+                display: block;
             }
         }
-        >.big-rigth{
+        >div>.big-rigth{
+            display: none;
             overflow: hidden;
             margin-left: 12px;
+            z-index: 999;
+            position: absolute;
+            top: 0px;
+            right: 198px;
         }
-        >.sm{
-            >span>img{
-                width: 100px;
-                border: 1px solid #999;
-                margin-right: 18px;
+        >div>.sm{
+           position: absolute;
+           top: 480px;
+
+            margin-top: 12px;
+            >span{
+                cursor: pointer;
             }
+            >span>img{
+                width: 82px;
+                border: 1px solid #999;
+                margin-right: 6px;
+                
+            }
+            >span:nth-of-type(6)>img{
+                    margin-right: 0;
+            }
+        }
+
+        >div>.move-box{
+            width: 180px;
+            height: 180px;
+            border: 1px solid #444;
+            background: yellowgreen;
+            z-index: 99;
+            opacity: .5;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+        }
+
+        .details-box{
+            // width: 520px;
+            position: relative;
+            top: -480px;
+            right: -560px;
+            z-index: 0;
+           >div{
+               position: absolute;
+                top: 0;
+                height: 120px;
+            >ul{
+                width: 590px;
+                border-bottom: 1px solid #999;
+                padding: 20px 0;
+                
+                >a{
+                    position: absolute;
+                    top: 32px;
+                    right: 0;
+                    color: #000;
+                    font-size: 12px;
+                    padding: 4px 14px;
+                    background: rgb(235, 233, 233);
+                    border: 1px solid rgb(180, 180, 180);
+
+                }
+                >div{
+                    >p{
+                        width: 460px;
+                        height:32px;
+                        font-size: 16px;
+
+                    }
+                    >span{
+                        color: #888;
+                        font-size: 12px;
+                        line-height:36px;
+                    }
+                }
+               
+            }
+            >ul:nth-of-type(2){
+                padding-top: 12px;
+                padding-bottom: 50px;
+                >span{
+                    color: #f00;
+                    font-size: 24px;
+                    font-weight: 900;
+                }
+            }
+            >ul:nth-of-type(3){
+                padding-top: 24px;
+                padding-bottom: 24px;
+                >p{
+                    font-size: 16px;
+                    line-height: 28px;
+                    >span:nth-of-type(2){
+                        border: 1px solid #999;
+                        padding: 6px 18px;
+                        margin-left: 32px;
+                    }
+                }
+            }
+            >ul:nth-of-type(4){
+                border: none;
+                padding-top: 24px;
+                padding-bottom: 24px;
+                >p:nth-of-type(1){
+                    font-size: 16px;
+                    line-height: 28px;
+                    >span:nth-of-type(2){
+                        border: 1px solid #999;
+                        padding: 6px 0;
+                        margin-left: 32px;
+                        background: rgb(211, 208, 208);
+                        
+                        >s{
+                            padding: 6px;
+                            font-size: 18px;
+                            cursor: pointer;
+                        }
+                        >input{
+                            display: inline-block;
+                            text-align: center;
+                            padding: 6px ;
+                            width: 68px;
+                            border: none;
+                            outline: none;
+                            height: 28px;
+                            background: rgb(211, 208, 208);
+                            border-right: 1px solid #999;
+                            border-left: 1px solid #999;
+                        }
+                        
+                    }
+                }
+                >p:nth-of-type(2){
+                    font-size: 16px;
+                    line-height: 48px;
+                    >span{
+                        margin-right: 38px;
+                        >a{
+                            text-decoration: none;
+                            
+                            text-align: center;
+                            font-size: 12px;
+                            padding: 12px 42px;
+                            &:nth-of-type(1){
+                                color: #fff;
+                                background: rgb(235, 11, 41);
+                            }
+                            &:hover{
+                               opacity: .8;
+                            }
+                            
+                        }
+                        &:nth-of-type(2){
+                            a{
+                                color: #000;
+                                border: 1px solid rgb(219, 215, 215);
+                                background: rgb(211, 208, 208);
+                                &:hover{
+                                    color: rgb(241, 25, 25);
+                                border: 1px solid rgb(243, 34, 34);
+                                 }
+                            }
+                        }
+                    }
+                }
+            }
+            >p{
+                >span{
+                    margin-right: 48px;
+                    color: rgb(236, 119, 10);
+                }
+                >span:nth-of-type(3){
+                    margin: 0;
+                }
+                a{
+                    text-decoration: none;
+                    font-size: 12px;
+                    color: #000;
+                    padding-left: 12px;
+                }
+            }
+           }
+        }
+    }
+}
+
+// 详情页介绍区 start
+.details-pt{
+    background: rgb(236, 235, 235);
+    >.wrapper>div{
+        width: 100%;
+        margin-bottom: 24px;
+        border: 1px solid #999;
+        background: rgb(241, 241, 241);
+        >ul{
+            margin: 0;
+            >span{
+                display: inline-block;
+                // text-indent: 32px;
+                padding: 24px 32px;
+                // border-left: 1px solid #999;
+                margin-right:32px;
+                font-size: 16px;
+                cursor: pointer;
+                
+            }
+            // span:first-of-type{
+            //     border: none;
+            // }
+            >.active{
+                border-bottom: 3px solid #f00;
+            }
+        }
+    }
+    >.wrapper>.cp{
+        border: none;
+        width: 100%;
+        >img{
+            width: 100%;
         }
     }
 }

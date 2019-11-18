@@ -5,21 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+    <title>商品详情</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../style/details.css">
     <link rel="stylesheet" href="../font/iconfont.css">
     <script src="../js/jquery.min.js"></script>
-    <script>
-        $(function () {
-            $('.glyphicon-th-list').on('click', function () {
-
-                $(this).toggleClass('gtl');
-                $('.banner-nav').toggleClass('gtl-nav');
-
-            })
-        })
-    </script>
+    <script src="../js/details.js"></script>
 </head>
 
 <body>
@@ -59,7 +50,7 @@
                         <span class="glyphicon glyphicon-sunglasses"></span><a href="">启客系列</a>
                         <div>
                             <p>
-                                <a href="">
+                                <a href="details.html">
                                     <img src="../img/sm-01.png" alt="">
                                 </a>
                                 <a href="">壁挂式</a>
@@ -244,27 +235,122 @@
     <div class="details-main">
         <div class="wrapper">
             <div class="details-main-top">
-                <div class="big big-left">
-                    <img src="../img/big-1.jpg" alt="">
-                    <span></span>
-                </div>
-                <div class="big big-rigth">
-                    <img src="../img/big-1.jpg" alt="">
-                </div>
-                <div class="sm">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span><img src="../img/TV-01.jpg" alt=""></span>
-                    <span><img src="../img/TV-2.jpg" alt=""></span>
-                    <span><img src="../img/TV-3.jpg" alt=""></span>
-                    <span><img src="../img/TV-4.jpg" alt=""></span>
-                    <span><img src="../img/TV-2.jpg" alt=""></span>
-                    <span class="glyphicon glyphicon-chevron-right"></span>
+               <div>
+                    <div class="big big-left">
+                            <img src="../img/big-1.jpg" alt="">
+                            <span></span>
+                        </div>
+        
+                        <div class="move-box"></div>
+                        
+                        <div class="big big-rigth">
+                            <img src="../img/big-1.jpg" alt="">
+                        </div>
+                        <div class="sm">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span><img src="../img/TV-01.jpg" alt=""></span>
+                            <span><img src="../img/TV-2.jpg" alt=""></span>
+                            <span><img src="../img/TV-3.jpg" alt=""></span>
+                            <span><img src="../img/TV-4.jpg" alt=""></span>
+                            <span><img src="../img/TV-2.jpg" alt=""></span>
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+        
+                        </div>
+               </div>
 
+                <div class="details-box">
+                   <div>
+                    <ul>
+                        <div>
+                            <p>长虹（CHANGHONG）3P一级能效变频圆柱冷暖立柜式空调白色KFR-72LW/DFR1+A1</p>
+                            <span>一级能效 节能好颜</span>
+                        </div>
+                        <a href="">加入对比</a>
+                    </ul>
+                    <ul>
+                        <span>
+                            ￥6999.00
+                        </span>
+                    </ul>
+                    <ul>
+                        <p>
+                            <span>配送地址:</span>
+                            <span>省 / 市 / 县 &nbsp;&nbsp; v</span>
+                        </p>
+                        <p>服务信息： 由长虹官方发货，并提供售后服务</p>
+                    </ul>
+                    <ul>
+                        <p>
+                            <span>商品数量：</span>
+                            <span>
+                                <s>-</s>
+                                <input type="text" value="1">
+                                <s>+</s>
+                            </span>
+                        </p>
+                        <p>
+                            <span><a href="">立即购买</a></span>
+                            <span><a href="">加入购物车</a></span>
+                        </p>
+                    </ul>
+                    <p>
+                        <span class="iconfont iconerji"><a href="">在线客服</a></span>
+                        <span class="iconfont iconshoucang1"><a href="">收藏</a></span>
+                        <span class="iconfont iconfenxiang1"><a href="">分享</a></span>
+                        <span><a href="">
+                            <s class="iconfont iconweibo " style="color: rgb(223, 69, 22);"></s>
+                            <s class="iconfont iconweixin" style="color: rgb(73, 211, 18);"></s>
+                            <s class="iconfont iconzhifubao" style="color: rgb(22, 133, 223);"></s>
+                            <s class="iconfont iconQQ" style="color: rgb(22, 183, 223);"></s>
+                        </a></span>
+                    </p>
+                   </div>
                 </div>
             </div>
 
         </div>
     </div>
+
+    <!-- 详情页介绍区 -->
+    <div class="details-pt">
+        <div class="wrapper">
+            <div>
+                <ul>
+                    <span class="active">产品特征</span>
+                    <span >技术参数</span>
+                    <span>客户评价</span>
+                    <span>服务</span>
+                    <span>配件</span>
+                    <span>评测</span>
+                </ul>
+            </div>
+            <!-- 产品特征 -->
+            <div class="cp">
+                    <img src="../img/cp-2.jpg" alt="">
+            </div>
+            <!-- 技术参数 -->
+            <div class="cp">
+                    <img src="../img/sj-1.jpg" alt="">
+            </div>
+            <!-- 客户评价 -->
+            <div class="cp">
+                    <img src="../img/cp-1.jpg" alt="">
+            </div>
+             <!-- 服务 -->
+             <div class="cp">
+                    <img src="../img/wf-1.jpg" alt="">
+            </div>
+             <!-- 配件 -->
+             <div class="cp">
+                    <img src="../img/sj-1.jpg" alt="">
+            </div>
+             <!-- 评测 -->
+             <div class="cp">
+                    <img src="../img/sj-1.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>

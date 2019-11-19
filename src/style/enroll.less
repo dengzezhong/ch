@@ -1,0 +1,395 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.width(@num){
+    width: @num;
+}
+html,body{
+    width: 1366px;
+    overflow-x: hidden;
+}
+// 版心
+.wrapper{
+   .width(1170px);
+    margin: 0 auto;
+    height: 100%;
+}
+.wrapper:after{
+    content:'';
+    display:block;
+    height:0;
+    /*相当于一个空的块状元素div*/
+    overflow:hidden;
+    visibility:hidden;
+    clear:both;
+    }
+// header start
+.head{
+    .width(1366px);
+    height: 36px;
+    background: rgb(49, 10, 10);
+    li{
+        width: 145px;
+    }
+}
+.head-left{
+    float: left;
+    >li{
+        float: left;
+       
+        >a{
+            width: 145px;
+            height: 36px;
+            color: #fff;
+            padding: 0;
+            text-align: center;
+            line-height: 36px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        >a:hover{
+            background: rgb(99, 92, 92);
+        }
+        >.active{
+            background: rgb(85, 68, 68);
+        }
+    }
+}
+.head-rigth{
+    float: right;
+    >li{
+        float: left;
+        width: 120px;
+        text-align: center;
+        >a{
+            
+            height: 36px;
+            color: #fff;
+            padding: 0;
+            
+            line-height: 36px;
+            text-decoration: none;
+            display: inline-block;
+            >span>span{
+                padding-left: 10px;
+                line-height: 18px;
+            }
+        }
+        &:hover{
+            background: rgb(99, 92, 92);
+            &:first-of-type{
+                background: rgb(49, 10, 10);
+            }
+        }
+        
+    }
+    >li:first-of-type{
+        line-height: 36px;
+        >a{
+            float: left;
+            background: none;
+            width: 50px;
+        }
+        >span{
+            float: left;
+            color: #fff;
+        }
+    }
+}
+// nav start
+nav{
+    height: 78px;
+    .width(1366px);
+    box-shadow: 1px 1px 6px 1px #666;
+    .wrapper{
+        position: relative;
+          >.logo{
+        float: left;
+        position: absolute;
+        top: 0px;
+        left: 0;
+         }
+        >span{
+        font-size: 26px;
+        color: rgb(7, 7, 7);
+        font-weight: 500;
+        padding-left: 12px;
+        border-left: 1px solid rgb(204, 201, 201);
+        position: absolute;
+        top: 36%;
+        left: 220px;
+        cursor: pointer;
+    }
+
+    }
+}
+
+// 注册 start
+.enroll{
+    >fieldset {
+        width: 520px;
+        // height: 600px;
+
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px 3px#666;
+        text-align: center;
+        >legend {
+            width: 140px;
+            height: 30px;
+            // border: 1px solid #000;
+            border-radius: 5px;
+            box-shadow: 3px 3px 3px #ccc;
+            text-shadow: 1px 1px 3px #666;
+            text-align: center;
+            line-height: 30px;
+            font-weight: 900;
+        }
+        >p{
+            margin: 32px auto;
+           
+            >input{
+                width: 360px;
+                margin-left: 12px;
+                border-radius: 6px;
+                box-shadow: 1px 1px 3px #333;
+                outline: none;
+                padding: 12px;
+                
+             }
+             &:nth-of-type(4)>input,&:nth-of-type(5)>input{
+                 width: 200px;
+             }
+             &:nth-of-type(4)>span{
+                 margin-left: 6px;
+                 >img{
+                     width: 100px;
+                     height: 48px;
+                 }
+                 &:nth-of-type(2){
+                     display: inline-block;
+                     cursor: pointer;
+                 }
+             }
+             &:nth-of-type(5)>span{
+                width: 132px;
+                border: 1px solid #666;
+                display: inline-block;
+                line-height: 46px;
+                border-radius: 3px;
+                cursor: pointer;
+                &:hover{
+                    border-color: red;
+                    color: #f00;
+                }
+             }
+             >label{
+                font-weight: 900;
+            }
+        }
+        >input{
+            margin: 30px 0;
+            border-radius: 5px;
+            box-shadow: 1px 1px 3px  #333;
+            outline: none;
+        }
+        >input:nth-of-type(1){
+            // margin-left: 150px;
+            padding: 10px 160px;
+            margin: 0;
+        }
+        >a{
+            color: rgb(243, 28, 28);
+            font-size: 16px;
+            padding: 12px;
+            margin: 12px;
+            display: inline-block;
+            text-decoration: none;
+        }
+    }
+}
+
+
+// footer start
+// 上尾部
+.footer{
+    margin-top: 120px;
+    width: 100%;
+    background: #888;
+    padding-bottom: 12px;
+    >.wrapper>.footer-top>ul{
+        padding: 32px 0;
+        margin: 0;
+        border-bottom: 1px solid #666;
+        &::after{
+            content: '';
+            display: block;
+            height: 0;
+            overflow: hidden;
+            visibility: hidden;
+            clear: both;
+        }
+        >li{
+            
+            >span{
+                float: left;
+                >h4{
+                    font-weight: 900;
+                }
+            }
+            >span:first-of-type{
+                font-size: 46px;
+                margin-right: 32px;
+            }
+        }
+        >li:nth-of-type(1),>li:nth-of-type(2){
+            width: 480px;
+            float: left;
+        }
+        >li::nth-of-type(3){
+            width: 160px;
+            float: right;
+        }
+    }
+
+
+    >.wrapper>.footer-top>div{
+        padding: 20px;
+        // position: relative;
+        
+        >ul{
+            float: left;
+            margin: 0;
+            &::after{
+                content: '';
+                display: block;
+                height: 0;
+                overflow: hidden;
+                visibility: hidden;
+                clear: both;
+            }
+            >div{
+                float: left;
+                margin-right: 28px;
+                >h4{
+                    margin: 0;
+                }
+                >a{
+                    text-decoration: none;
+                    color: #666;
+                    line-height: 32px;
+                }
+            }
+            &::nth-of-type(2){
+                >div{
+                    padding: 0 20px;
+                }
+            }
+            >span{
+                display: inline-block;
+                width: 100%-14px;
+                border-top:1px solid #666;
+                padding-top: 40px;
+                margin-top: 12px;
+                position: relative;
+                >a{
+                    text-decoration: none;
+                    font-size: 16px;
+                    color: #000;
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    &:hover{
+                        color: #f00;
+                    }
+                }
+            }
+        }
+
+        >.one{
+            padding: 0 26px;
+            border-left:1px solid #666;
+            float: left;
+            >span{
+                color: #000;
+                font-size: 26px;
+                >a{
+                    font-size: 16px;
+                    text-decoration: none;
+                    color: rgb(194, 50, 50);
+                    line-height: 26px;
+                }
+
+            }
+            >span:nth-of-type(3){
+                display: inline-block;
+                padding-top: 10px;
+            }
+
+            >img{
+                width: 100px;
+                &:nth-of-type(2){
+                    margin-left: 30px;
+                }
+            }
+        }
+        >.footer-one{
+            padding: 18px;
+            padding-left:22px ;
+            >span{
+                font-size: 12px;
+                display: inline-block;
+                padding: 6px 30px;
+                &:nth-of-type(2){
+                    margin-left: 18px;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    
+}
+// 下尾部
+.footer-bot{
+    background: #000;
+    >.wrapper>.bot{
+        >h2{
+            text-align: center;
+            margin: 0;
+            padding: 24px;
+        }
+        >p{
+            text-align: center;
+            color: #888;
+            >a{
+                text-decoration: none;
+                color: #888;
+            }
+        }
+        >ul{
+            padding: 36px 85px;
+            margin: 0;
+            &::after{
+                content: '';
+                display: block;
+                height: 0;
+                visibility: hidden;
+                overflow: hidden;
+                clear: both;
+            }
+            li{
+                float: left;
+                color: #888;
+                width: 1000px/5;
+                line-height: 36px;
+                >img{
+                    padding-right: 12px;
+                }
+            }
+        }
+    }
+    
+}

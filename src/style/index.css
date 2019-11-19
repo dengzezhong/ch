@@ -4,6 +4,10 @@
   list-style: none;
   text-decoration: none;
 }
+html,
+body {
+  width: 1366px;
+}
 .wrapper {
   width: 1170px;
   margin: 0 auto;
@@ -584,11 +588,12 @@ nav > .wrapper > .nav > div:hover > a ~ ul > ul > li > p:nth-of-type(2) {
   padding-right: 12px;
 }
 .fixed-nav-left {
+  display: none;
   position: fixed;
   top: 32%;
   left: 6px;
 }
-.fixed-nav-left > a {
+.fixed-nav-left > span {
   display: inline-block;
   width: 48px;
   height: 48px;
@@ -599,7 +604,7 @@ nav > .wrapper > .nav > div:hover > a ~ ul > ul > li > p:nth-of-type(2) {
   line-height: 48px;
   border-bottom: 1px solid #888;
 }
-.fixed-nav-left > a:hover {
+.fixed-nav-left > span:hover {
   background: #f00;
   color: #fff;
   border: none;

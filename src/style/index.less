@@ -4,6 +4,10 @@
     list-style: none;
     text-decoration: none;
 }
+html,body{
+    width: 1366px;
+    // overflow-x: hidden;
+}
 .width(@num){
     width: @num;
 }
@@ -660,10 +664,11 @@ nav>.wrapper>.nav>div:hover>a~ul{
 
 // 固定导航
 .fixed-nav-left{
+    display: none;
     position: fixed;
     top: 32%;
     left: 6px;
-    >a{
+    >span{
         display: inline-block;
         width: 48px;
         height: 48px;

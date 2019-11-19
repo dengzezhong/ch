@@ -1,0 +1,356 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+html,
+body {
+  width: 1366px;
+  overflow-x: hidden;
+}
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+}
+.wrapper:after {
+  content: '';
+  display: block;
+  height: 0;
+  /*相当于一个空的块状元素div*/
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+.head {
+  width: 1366px;
+  height: 36px;
+  background: #310a0a;
+}
+.head li {
+  width: 145px;
+}
+.head-left {
+  float: left;
+}
+.head-left > li {
+  float: left;
+}
+.head-left > li > a {
+  width: 145px;
+  height: 36px;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  line-height: 36px;
+  text-decoration: none;
+  display: inline-block;
+}
+.head-left > li > a:hover {
+  background: #635c5c;
+}
+.head-left > li > .active {
+  background: #554444;
+}
+.head-rigth {
+  float: right;
+}
+.head-rigth > li {
+  float: left;
+  width: 120px;
+  text-align: center;
+}
+.head-rigth > li > a {
+  height: 36px;
+  color: #fff;
+  padding: 0;
+  line-height: 36px;
+  text-decoration: none;
+  display: inline-block;
+}
+.head-rigth > li > a > span > span {
+  padding-left: 10px;
+  line-height: 18px;
+}
+.head-rigth > li:hover {
+  background: #635c5c;
+}
+.head-rigth > li:hover:first-of-type {
+  background: #310a0a;
+}
+.head-rigth > li:first-of-type {
+  line-height: 36px;
+}
+.head-rigth > li:first-of-type > a {
+  float: left;
+  background: none;
+  width: 50px;
+}
+.head-rigth > li:first-of-type > span {
+  float: left;
+  color: #fff;
+}
+nav {
+  height: 78px;
+  width: 1366px;
+  box-shadow: 1px 1px 6px 1px #666;
+}
+nav .wrapper {
+  position: relative;
+}
+nav .wrapper > .logo {
+  float: left;
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+nav .wrapper > span {
+  font-size: 26px;
+  color: #070707;
+  font-weight: 500;
+  padding-left: 12px;
+  border-left: 1px solid #ccc9c9;
+  position: absolute;
+  top: 36%;
+  left: 220px;
+  cursor: pointer;
+}
+.enroll > fieldset {
+  width: 520px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px #666;
+  text-align: center;
+}
+.enroll > fieldset > legend {
+  width: 140px;
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #ccc;
+  text-shadow: 1px 1px 3px #666;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 900;
+}
+.enroll > fieldset > p {
+  margin: 32px auto;
+}
+.enroll > fieldset > p > input {
+  width: 360px;
+  margin-left: 12px;
+  border-radius: 6px;
+  box-shadow: 1px 1px 3px #333;
+  outline: none;
+  padding: 12px;
+}
+.enroll > fieldset > p:nth-of-type(4) > input,
+.enroll > fieldset > p:nth-of-type(5) > input {
+  width: 200px;
+}
+.enroll > fieldset > p:nth-of-type(4) > span {
+  margin-left: 6px;
+}
+.enroll > fieldset > p:nth-of-type(4) > span > img {
+  width: 100px;
+  height: 48px;
+}
+.enroll > fieldset > p:nth-of-type(4) > span:nth-of-type(2) {
+  display: inline-block;
+  cursor: pointer;
+}
+.enroll > fieldset > p:nth-of-type(5) > span {
+  width: 132px;
+  border: 1px solid #666;
+  display: inline-block;
+  line-height: 46px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.enroll > fieldset > p:nth-of-type(5) > span:hover {
+  border-color: red;
+  color: #f00;
+}
+.enroll > fieldset > p > label {
+  font-weight: 900;
+}
+.enroll > fieldset > input {
+  margin: 30px 0;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #333;
+  outline: none;
+}
+.enroll > fieldset > input:nth-of-type(1) {
+  padding: 10px 160px;
+  margin: 0;
+}
+.enroll > fieldset > a {
+  color: #f31c1c;
+  font-size: 16px;
+  padding: 12px;
+  margin: 12px;
+  display: inline-block;
+  text-decoration: none;
+}
+.footer {
+  margin-top: 120px;
+  width: 100%;
+  background: #888;
+  padding-bottom: 12px;
+}
+.footer > .wrapper > .footer-top > ul {
+  padding: 32px 0;
+  margin: 0;
+  border-bottom: 1px solid #666;
+}
+.footer > .wrapper > .footer-top > ul::after {
+  content: '';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+.footer > .wrapper > .footer-top > ul > li > span {
+  float: left;
+}
+.footer > .wrapper > .footer-top > ul > li > span > h4 {
+  font-weight: 900;
+}
+.footer > .wrapper > .footer-top > ul > li > span:first-of-type {
+  font-size: 46px;
+  margin-right: 32px;
+}
+.footer > .wrapper > .footer-top > ul > li:nth-of-type(1),
+.footer > .wrapper > .footer-top > ul > li:nth-of-type(2) {
+  width: 480px;
+  float: left;
+}
+.footer > .wrapper > .footer-top > ul > li::nth-of-type(3) {
+  width: 160px;
+  float: right;
+}
+.footer > .wrapper > .footer-top > div {
+  padding: 20px;
+}
+.footer > .wrapper > .footer-top > div > ul {
+  float: left;
+  margin: 0;
+}
+.footer > .wrapper > .footer-top > div > ul::after {
+  content: '';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+.footer > .wrapper > .footer-top > div > ul > div {
+  float: left;
+  margin-right: 28px;
+}
+.footer > .wrapper > .footer-top > div > ul > div > h4 {
+  margin: 0;
+}
+.footer > .wrapper > .footer-top > div > ul > div > a {
+  text-decoration: none;
+  color: #666;
+  line-height: 32px;
+}
+.footer > .wrapper > .footer-top > div > ul::nth-of-type(2) > div {
+  padding: 0 20px;
+}
+.footer > .wrapper > .footer-top > div > ul > span {
+  display: inline-block;
+  width: 86%;
+  border-top: 1px solid #666;
+  padding-top: 40px;
+  margin-top: 12px;
+  position: relative;
+}
+.footer > .wrapper > .footer-top > div > ul > span > a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.footer > .wrapper > .footer-top > div > ul > span > a:hover {
+  color: #f00;
+}
+.footer > .wrapper > .footer-top > div > .one {
+  padding: 0 26px;
+  border-left: 1px solid #666;
+  float: left;
+}
+.footer > .wrapper > .footer-top > div > .one > span {
+  color: #000;
+  font-size: 26px;
+}
+.footer > .wrapper > .footer-top > div > .one > span > a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #c23232;
+  line-height: 26px;
+}
+.footer > .wrapper > .footer-top > div > .one > span:nth-of-type(3) {
+  display: inline-block;
+  padding-top: 10px;
+}
+.footer > .wrapper > .footer-top > div > .one > img {
+  width: 100px;
+}
+.footer > .wrapper > .footer-top > div > .one > img:nth-of-type(2) {
+  margin-left: 30px;
+}
+.footer > .wrapper > .footer-top > div > .footer-one {
+  padding: 18px;
+  padding-left: 22px ;
+}
+.footer > .wrapper > .footer-top > div > .footer-one > span {
+  font-size: 12px;
+  display: inline-block;
+  padding: 6px 30px;
+}
+.footer > .wrapper > .footer-top > div > .footer-one > span:nth-of-type(2) {
+  margin-left: 18px;
+  padding-right: 0;
+}
+.footer-bot {
+  background: #000;
+}
+.footer-bot > .wrapper > .bot > h2 {
+  text-align: center;
+  margin: 0;
+  padding: 24px;
+}
+.footer-bot > .wrapper > .bot > p {
+  text-align: center;
+  color: #888;
+}
+.footer-bot > .wrapper > .bot > p > a {
+  text-decoration: none;
+  color: #888;
+}
+.footer-bot > .wrapper > .bot > ul {
+  padding: 36px 85px;
+  margin: 0;
+}
+.footer-bot > .wrapper > .bot > ul::after {
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  clear: both;
+}
+.footer-bot > .wrapper > .bot > ul li {
+  float: left;
+  color: #888;
+  width: 200px;
+  line-height: 36px;
+}
+.footer-bot > .wrapper > .bot > ul li > img {
+  padding-right: 12px;
+}

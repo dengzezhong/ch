@@ -26,20 +26,46 @@ define(['jquery'], function($) {
 
         // 左边固定导航，跟踪效果(页面滚动跟踪++++单击导航跟踪)
         fixedNav: function() {
-            var docHeight = $(document).height();
-            var bodyH = $(body).height();
-            console.log(bodyH);
-            // 单击导航跟踪
-            $('.fixed-nav-left>a').on('click', function() {
-                var count = $(this).attr('value');
-                console.log(count);
-                switch (count) {
-                    case 1:
-                        $(document).offset({ top: -100, left: 0 });
+
+            $(window).on('scroll', function() {
+                var scrollTop = $(window).scrollTop();
+
+                if (scrollTop < 600 || scrollTop > 3437) {
+                    $('.fixed-nav-left').css('display', 'none');
+                } else {
+                    $('.fixed-nav-left').css('display', 'inline-block');
                 }
+                if (scrollTop < 100) {
+                    $('.fixed-nav-right-two').css('display', "none");
+
+                } else {
+                    $('.fixed-nav-right-two').css('display', 'inline-block');
+                }
+
+                // 页面滚动跟踪
+                if (scrollTop > 560 && scrollTop < 810) {
+                    $('.fixed-nav-left>span').eq(0).addClass('fixed-color').siblings().removeClass('fixed-color');
+                } else if (scrollTop > 810 && scrollTop < 1500) {
+                    $('.fixed-nav-left>span').eq(1).addClass('fixed-color').siblings().removeClass('fixed-color');
+                } else if (scrollTop > 1500 && scrollTop < 2250) {
+                    $('.fixed-nav-left>span').eq(2).addClass('fixed-color').siblings().removeClass('fixed-color');
+                } else if (scrollTop > 2250 && scrollTop < 3000) {
+                    $('.fixed-nav-left>span').eq(3).addClass('fixed-color').siblings().removeClass('fixed-color');
+                } else if (scrollTop > 3000) {
+                    $('.fixed-nav-left>span').eq(4).addClass('fixed-color').siblings().removeClass('fixed-color');
+                }
+            });
+            // 单击导航跟踪
+            $('.fixed-nav-left>span').on('click', function() {
+                var docTop = $(document).scrollTop();
+
+                var top = $('.' + $(this).attr('value')).offset().top;
+
+                $('html,body').animate({ scrollTop: top }, 500);
+
+                $(this).addClass('fixed-color').siblings().removeClass('fixed-color');
+
             })
-
-
 
         }
     }

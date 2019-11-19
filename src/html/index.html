@@ -37,7 +37,8 @@
                 <li><a href="#"><span>English</span></a></li>
             </ul>
             <ul class="head-rigth">
-                <li><a href="#">登入</a><span>|</span><a href="#">注册</a>
+                <li id="zt">
+                    <a href="enter.html">登入</a><span>|</span><a href="enroll.html" target="_blank">注册</a>
                 </li>
                 <li><a href="#"><span class="glyphicon glyphicon-user"><span>我的长虹</span></span></a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-gift"><span>虹创有品</span></span></a></li>
@@ -125,9 +126,78 @@
                         </ul>
                     </ul>
                 </div>
-                <div><a href="">家用电器</a></div>
-                <div><a href="">显示器</a></div>
-                <div><a href="">服务</a></div>
+                <div><a href="">家用电器</a>
+                    <ul>
+                        <span>热门推荐</span>
+                        <ul>
+                            <li>
+                                <a href="details.html"><img src="../img/jd-01.jpg" alt=""></a>
+                                <p><a href="">v不哈飞机噶就发给反馈</a></p>
+                                <p>￥6899.00</p>
+                            </li>
+
+                            <li>
+                                <a href="details.html"><img src="../img/jd-02.jpg" alt=""></a>
+                                <p><a href="">v不哈飞机噶就发给反馈</a></p>
+                                <p>￥6899.00</p>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div><a href="">显示器</a>
+                    <ul>
+                        <span>热门推荐</span>
+                        <ul>
+                            <li>
+                                <a href="details.html"><img src="../img/kt-02.jpg" alt=""></a>
+                                <p><a href="">v不哈飞机噶就发给反馈</a></p>
+                                <p>￥6899.00</p>
+                            </li>
+
+                            <li>
+                                <a href="details.html"><img src="../img/kt-04.jpg" alt=""></a>
+                                <p><a href="">v不哈飞机噶就发给反馈</a></p>
+                                <p>￥6899.00</p>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div><a href="">服务</a>
+                    <ul>
+                        <span>服务支持</span>
+                        <ul>
+                            <li>
+                                <a href="details.html"><img src="../img/fw-02.png" alt=""></a>
+                                <p><a href="">服务政策</a></p>
+
+                            </li>
+
+                            <li>
+                                <a href="details.html"><img src="../img/fw-04.png" alt=""></a>
+                                <p><a href="">常见问题</a></p>
+
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                            <li>
+                                <a href=""></a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
             </div>
             <!-- 搜索框 -->
             <div class="sea">
@@ -544,16 +614,16 @@
 
     <!-- 固定导航 -->
     <div class="fixed-nav-left">
-        <a href="#" value="1">热门</a><br>
-        <a href="#" value="2">电视</a><br>
-        <a href="#" value="3">空调</a><br>
-        <a href="#" value="4">冰洗</a><br>
-        <a href="#" value="5">生活</a>
+        <span value="notice">热门</span><br>
+        <span value="tv">电视</span><br>
+        <span value="kt">空调</span><br>
+        <span value="bx">冰洗</span><br>
+        <span value="sh">生活</span>
     </div>
     <div class="fixed-nav-right">
         <a href=""><span class=" iconfont iconicon_cart"></span></a><br>
         <a href=""><span class="iconfont iconerji"></span></a><br>
-        <a href="#"><span class="glyphicon glyphicon-chevron-up"></span></a>
+        <a href="#" class="fixed-nav-right-two"><span class="glyphicon glyphicon-chevron-up"></span></a>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>

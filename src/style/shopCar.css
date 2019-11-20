@@ -1,0 +1,398 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+html,
+body {
+  width: 1366px;
+  overflow-x: hidden;
+}
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+}
+.wrapper:after {
+  content: '';
+  display: block;
+  height: 0;
+  /*相当于一个空的块状元素div*/
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+.head {
+  width: 1366px;
+  height: 36px;
+  background: #310a0a;
+}
+.head li {
+  width: 145px;
+}
+.head-left {
+  float: left;
+}
+.head-left > li {
+  float: left;
+}
+.head-left > li > a {
+  width: 145px;
+  height: 36px;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  line-height: 36px;
+  text-decoration: none;
+  display: inline-block;
+}
+.head-left > li > a:hover {
+  background: #635c5c;
+}
+.head-left > li > .active {
+  background: #554444;
+}
+.head-rigth {
+  float: right;
+}
+.head-rigth > li {
+  float: left;
+  width: 120px;
+  text-align: center;
+}
+.head-rigth > li > a {
+  height: 36px;
+  color: #fff;
+  padding: 0;
+  line-height: 36px;
+  text-decoration: none;
+  display: inline-block;
+}
+.head-rigth > li > a > span > span {
+  padding-left: 10px;
+  line-height: 18px;
+}
+.head-rigth > li:hover {
+  background: #635c5c;
+}
+.head-rigth > li:hover:first-of-type {
+  background: #310a0a;
+}
+.head-rigth > li:first-of-type {
+  line-height: 36px;
+}
+.head-rigth > li:first-of-type > a {
+  float: left;
+  background: none;
+  width: 50px;
+}
+.head-rigth > li:first-of-type > span {
+  float: left;
+  color: #fff;
+}
+nav {
+  height: 78px;
+  width: 1366px;
+  box-shadow: 1px 1px 6px 1px #666;
+}
+nav .wrapper {
+  position: relative;
+}
+nav .wrapper > .logo {
+  float: left;
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+nav .wrapper > span {
+  font-size: 26px;
+  color: #070707;
+  font-weight: 500;
+  padding-left: 12px;
+  border-left: 1px solid #ccc9c9;
+  position: absolute;
+  top: 36%;
+  left: 220px;
+  cursor: pointer;
+}
+.mainCar > .wrapper > h2 {
+  font-size: 120px;
+  color: #666;
+  text-align: center;
+}
+.mainCar > .wrapper > p {
+  margin: 0;
+  padding: 18px 0;
+  position: relative;
+}
+.mainCar > .wrapper > p > input {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+.mainCar > .wrapper > p > label {
+  font-size: 18px;
+  position: absolute;
+  top: 28px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.mainCar > .wrapper > div {
+  margin-bottom: 18px;
+  padding: 12px 66px;
+  position: relative;
+  background: #fff;
+  border: 1px solid #666;
+  border-radius: 6px;
+}
+.mainCar > .wrapper > div::after {
+  content: '';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+.mainCar > .wrapper > div > input {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 40%;
+}
+.mainCar > .wrapper > div > div {
+  width: 680px;
+  float: right;
+}
+.mainCar > .wrapper > div > div > img {
+  float: left;
+}
+.mainCar > .wrapper > div > div > div {
+  float: right;
+  padding: 32px;
+}
+.mainCar > .wrapper > div > div > div > span:first-of-type {
+  color: #f00;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 82px;
+}
+.mainCar > .wrapper > div > div > div > span:nth-of-type(2) {
+  padding: 12px 122px;
+  color: #f00;
+  font-size: 18px;
+}
+.mainCar > .wrapper > div > div > div > p {
+  cursor: pointer;
+}
+.mainCar > .allPrice {
+  margin-top: 88px;
+  margin-bottom: 6px;
+  background: #dbd9d9;
+  box-shadow: 1px 6px 4px 6px #000;
+}
+.mainCar > .allPrice > .wrapper {
+  position: relative;
+}
+.mainCar > .allPrice > .wrapper > div:first-of-type {
+  cursor: pointer;
+  margin: 0;
+  padding: 18px 0;
+  position: relative;
+}
+.mainCar > .allPrice > .wrapper > div:first-of-type > input {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+}
+.mainCar > .allPrice > .wrapper > div:first-of-type > label {
+  margin-left: 8px;
+  font-size: 18px;
+  position: absolute;
+  top: 28px;
+  cursor: pointer;
+}
+.mainCar > .allPrice > .wrapper > div:nth-of-type(2) {
+  position: absolute;
+  top: 32%;
+  right: 32px;
+}
+.mainCar > .allPrice > .wrapper > div:nth-of-type(2) > span {
+  font-size: 24px;
+  font-weight: 900;
+}
+.mainCar > .allPrice > .wrapper > div:nth-of-type(2) > span:nth-of-type(2) {
+  color: #fa0909;
+}
+.mainCar > .allPrice > .wrapper > div:nth-of-type(2) > span:nth-of-type(3) {
+  cursor: pointer;
+  margin-left: 24px;
+  padding: 0 6px;
+}
+.mainCar > .allPrice > .wrapper > div:nth-of-type(2) > span:nth-of-type(3):hover {
+  background: #1bc9f5;
+  border-radius: 6px;
+}
+.footer {
+  width: 100%;
+  background: #888;
+  padding-bottom: 12px;
+}
+.footer > .wrapper > .footer-top > ul {
+  padding: 32px 0;
+  margin: 0;
+  border-bottom: 1px solid #666;
+}
+.footer > .wrapper > .footer-top > ul::after {
+  content: '';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+.footer > .wrapper > .footer-top > ul > li > span {
+  float: left;
+}
+.footer > .wrapper > .footer-top > ul > li > span > h4 {
+  font-weight: 900;
+}
+.footer > .wrapper > .footer-top > ul > li > span:first-of-type {
+  font-size: 46px;
+  margin-right: 32px;
+}
+.footer > .wrapper > .footer-top > ul > li:nth-of-type(1),
+.footer > .wrapper > .footer-top > ul > li:nth-of-type(2) {
+  width: 480px;
+  float: left;
+}
+.footer > .wrapper > .footer-top > ul > li::nth-of-type(3) {
+  width: 160px;
+  float: right;
+}
+.footer > .wrapper > .footer-top > div {
+  padding: 20px;
+}
+.footer > .wrapper > .footer-top > div > ul {
+  float: left;
+  margin: 0;
+}
+.footer > .wrapper > .footer-top > div > ul::after {
+  content: '';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  clear: both;
+}
+.footer > .wrapper > .footer-top > div > ul > div {
+  float: left;
+  margin-right: 28px;
+}
+.footer > .wrapper > .footer-top > div > ul > div > h4 {
+  margin: 0;
+}
+.footer > .wrapper > .footer-top > div > ul > div > a {
+  text-decoration: none;
+  color: #666;
+  line-height: 32px;
+}
+.footer > .wrapper > .footer-top > div > ul::nth-of-type(2) > div {
+  padding: 0 20px;
+}
+.footer > .wrapper > .footer-top > div > ul > span {
+  display: inline-block;
+  width: 86%;
+  border-top: 1px solid #666;
+  padding-top: 40px;
+  margin-top: 12px;
+  position: relative;
+}
+.footer > .wrapper > .footer-top > div > ul > span > a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.footer > .wrapper > .footer-top > div > ul > span > a:hover {
+  color: #f00;
+}
+.footer > .wrapper > .footer-top > div > .one {
+  padding: 0 26px;
+  border-left: 1px solid #666;
+  float: left;
+}
+.footer > .wrapper > .footer-top > div > .one > span {
+  color: #000;
+  font-size: 26px;
+}
+.footer > .wrapper > .footer-top > div > .one > span > a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #c23232;
+  line-height: 26px;
+}
+.footer > .wrapper > .footer-top > div > .one > span:nth-of-type(3) {
+  display: inline-block;
+  padding-top: 10px;
+}
+.footer > .wrapper > .footer-top > div > .one > img {
+  width: 100px;
+}
+.footer > .wrapper > .footer-top > div > .one > img:nth-of-type(2) {
+  margin-left: 30px;
+}
+.footer > .wrapper > .footer-top > div > .footer-one {
+  padding: 18px;
+  padding-left: 22px ;
+}
+.footer > .wrapper > .footer-top > div > .footer-one > span {
+  font-size: 12px;
+  display: inline-block;
+  padding: 6px 30px;
+}
+.footer > .wrapper > .footer-top > div > .footer-one > span:nth-of-type(2) {
+  margin-left: 18px;
+  padding-right: 0;
+}
+.footer-bot {
+  background: #000;
+}
+.footer-bot > .wrapper > .bot > h2 {
+  text-align: center;
+  margin: 0;
+  padding: 24px;
+}
+.footer-bot > .wrapper > .bot > p {
+  text-align: center;
+  color: #888;
+}
+.footer-bot > .wrapper > .bot > p > a {
+  text-decoration: none;
+  color: #888;
+}
+.footer-bot > .wrapper > .bot > ul {
+  padding: 36px 85px;
+  margin: 0;
+}
+.footer-bot > .wrapper > .bot > ul::after {
+  content: '';
+  display: block;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  clear: both;
+}
+.footer-bot > .wrapper > .bot > ul li {
+  float: left;
+  color: #888;
+  width: 200px;
+  line-height: 36px;
+}
+.footer-bot > .wrapper > .bot > ul li > img {
+  padding-right: 12px;
+}

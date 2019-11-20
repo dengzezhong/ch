@@ -12,11 +12,11 @@ define(['jquery'], function($) {
                     let temp = '';
                     res.forEach(elm => {
                         temp += `<div>
-                        <a href="details.html?id=${baseUrl}/src/html${elm.id}"><img src="${baseUrl}/src/img/T-${elm.id}.jpg" alt=""></a>
+                        <a href="${baseUrl}/src/html/details.html?id=${elm.id}"><img src="${baseUrl}/src/img/T-${elm.id}.jpg" alt=""></a>
                         <br>
-                        <a href="" title="${elm.title}">${elm.title}</a>
+                        <a href="${baseUrl}/src/html/details.html?id=${elm.id}" title="${elm.title}">${elm.title}</a>
                         <p>开机物联电视 关机智能音箱</p>
-                        <span>${elm.price}</span>
+                        <span> ￥ ${elm.price}</span>
                       </div>`;
                     });
                     $('.text-bot-temp').append(temp);

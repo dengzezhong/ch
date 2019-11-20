@@ -6,7 +6,8 @@
 }
 html,
 body {
-  width: 1366px;
+  width: 100%;
+  overflow-x: hidden;
 }
 .wrapper {
   width: 1170px;

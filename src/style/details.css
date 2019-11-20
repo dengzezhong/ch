@@ -445,6 +445,7 @@ nav > .wrapper > .nav > div:hover > a ~ ul > ul > li > p:nth-of-type(2) {
 .details-main > .wrapper > .details-main-top .details-box > div > ul:nth-of-type(4) > p:nth-of-type(1) {
   font-size: 16px;
   line-height: 28px;
+  user-select: none;
 }
 .details-main > .wrapper > .details-main-top .details-box > div > ul:nth-of-type(4) > p:nth-of-type(1) > span:nth-of-type(2) {
   border: 1px solid #999;
@@ -452,10 +453,13 @@ nav > .wrapper > .nav > div:hover > a ~ ul > ul > li > p:nth-of-type(2) {
   margin-left: 32px;
   background: #d3d0d0;
 }
-.details-main > .wrapper > .details-main-top .details-box > div > ul:nth-of-type(4) > p:nth-of-type(1) > span:nth-of-type(2) > s {
-  padding: 6px;
+.details-main > .wrapper > .details-main-top .details-box > div > ul:nth-of-type(4) > p:nth-of-type(1) > span:nth-of-type(2) > span {
+  display: inline-block;
+  width: 28px;
+  text-align: center;
   font-size: 18px;
   cursor: pointer;
+  user-select: none;
 }
 .details-main > .wrapper > .details-main-top .details-box > div > ul:nth-of-type(4) > p:nth-of-type(1) > span:nth-of-type(2) > input {
   display: inline-block;
@@ -489,12 +493,19 @@ nav > .wrapper > .nav > div:hover > a ~ ul > ul > li > p:nth-of-type(2) {
 .details-main > .wrapper > .details-main-top .details-box > div > ul:nth-of-type(4) > p:nth-of-type(2) > span > a:hover {
   opacity: 0.8;
 }
-.details-main > .wrapper > .details-main-top .details-box > div > ul:nth-of-type(4) > p:nth-of-type(2) > span:nth-of-type(2) a {
+.details-main > .wrapper > .details-main-top .details-box > div > ul:nth-of-type(4) > p:nth-of-type(2) > span:nth-of-type(2) {
+  text-align: center;
+  font-size: 12px;
+  padding: 0px 42px;
+  height: 42px;
+  line-height: 42px;
+  cursor: pointer;
+  display: inline-block;
   color: #000;
   border: 1px solid #dbd7d7;
   background: #d3d0d0;
 }
-.details-main > .wrapper > .details-main-top .details-box > div > ul:nth-of-type(4) > p:nth-of-type(2) > span:nth-of-type(2) a:hover {
+.details-main > .wrapper > .details-main-top .details-box > div > ul:nth-of-type(4) > p:nth-of-type(2) > span:nth-of-type(2):hover {
   color: #f11919;
   border: 1px solid #f32222;
 }

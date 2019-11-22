@@ -28,6 +28,7 @@ define(['jquery', 'cookie'], function($, cookie) {
                                 </span>
                             </ul>
                     `);
+
                     callback && callback(res.id, res.price);
                 }
             });
@@ -111,6 +112,18 @@ define(['jquery', 'cookie'], function($, cookie) {
             cookie.set('shop', JSON.stringify(shop), 1)
 
             $('body').append('<script>alert("已加入购物车")</script>');
+        },
+
+        // 用户是否登入注册
+        userEnter: function() {
+            let enter = cookie.get('enter');
+
+            if (JSON.parse(enter)[0].success) {
+
+                $('#zt').text('').append(' <a href="#">长虹</a><span>|</span><a href="#" target="_blank">欢迎您</a>');
+
+                $('.enterShop').attr('href', 'shopCar.html');
+            }
         }
 
     }

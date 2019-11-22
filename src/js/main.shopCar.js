@@ -9,9 +9,12 @@ require.config({
 });
 
 require(['jquery', 'shopCar', 'cookie'], function($, shopCar, cookie) {
-    shopCar.render(function() {
+    // cookie.remove('shop');
+    shopCar.render();
+    shopCar.selectShop(function() {
 
-        shopCar.selectShop();
-
+        shopCar.oneShop();
     });
+    shopCar.deleteShop();
+    shopCar.oneShop();
 })

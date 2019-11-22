@@ -139,7 +139,9 @@ nav .wrapper > span {
   margin-left: 8px;
   cursor: pointer;
 }
-.mainCar > .wrapper > div {
+.mainCar > .wrapper .shopBox > div {
+  width: 100%;
+  float: left;
   margin-bottom: 18px;
   padding: 12px 66px;
   position: relative;
@@ -147,7 +149,7 @@ nav .wrapper > span {
   border: 1px solid #666;
   border-radius: 6px;
 }
-.mainCar > .wrapper > div::after {
+.mainCar > .wrapper .shopBox > div::after {
   content: '';
   display: block;
   height: 0;
@@ -155,35 +157,36 @@ nav .wrapper > span {
   visibility: hidden;
   clear: both;
 }
-.mainCar > .wrapper > div > input {
+.mainCar > .wrapper .shopBox > div > input {
+  margin: 0;
   width: 24px;
   height: 24px;
   position: absolute;
   top: 40%;
 }
-.mainCar > .wrapper > div > div {
+.mainCar > .wrapper .shopBox > div > div {
   width: 680px;
   float: right;
 }
-.mainCar > .wrapper > div > div > img {
+.mainCar > .wrapper .shopBox > div > div > img {
   float: left;
 }
-.mainCar > .wrapper > div > div > div {
+.mainCar > .wrapper .shopBox > div > div > div {
   float: right;
   padding: 32px;
 }
-.mainCar > .wrapper > div > div > div > span:first-of-type {
+.mainCar > .wrapper .shopBox > div > div > div > span:first-of-type {
   color: #f00;
   font-size: 24px;
   font-weight: 900;
   line-height: 82px;
 }
-.mainCar > .wrapper > div > div > div > span:nth-of-type(2) {
+.mainCar > .wrapper .shopBox > div > div > div > span:nth-of-type(2) {
   padding: 12px 122px;
   color: #f00;
   font-size: 18px;
 }
-.mainCar > .wrapper > div > div > div > p {
+.mainCar > .wrapper .shopBox > div > div > div > p {
   cursor: pointer;
 }
 .mainCar > .allPrice {

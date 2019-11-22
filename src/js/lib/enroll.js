@@ -1,5 +1,6 @@
 define(['jquery', 'md5'], function($, md5) {
     return {
+        // 注册
         enrEV: function(selector) {
 
             $(selector).on('click', function() {

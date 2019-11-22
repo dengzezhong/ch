@@ -1,6 +1,6 @@
 let baseUrl = "http://127.0.0.1:8080/ch";
 
-define(['jquery'], function($) {
+define(['jquery', 'cookie'], function($, cookie) {
     return {
         // 首页——渲染页面功能
         render: function() {
@@ -20,6 +20,7 @@ define(['jquery'], function($) {
                       </div>`;
                     });
                     $('.text-bot-temp').append(temp);
+
                 }
             });
         },
@@ -67,6 +68,19 @@ define(['jquery'], function($) {
 
             })
 
+        },
+
+        // 用户是否登入注册
+        userEnter: function() {
+            let enter = cookie.get('enter');
+
+            if (JSON.parse(enter)[0].success) {
+                $('#zt').text('').append(' <a href="#">长虹</a><span>|</span><a href="#" target="_blank">欢迎您</a>');
+
+                $('.topShop').attr('href', 'shopCar.html');
+
+                $('.fixedShop').attr('href', 'shopCar.html');
+            }
         }
     }
 })

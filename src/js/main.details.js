@@ -17,4 +17,5 @@ require(['jquery', 'details', 'cookie'], function($, details) {
     });
     details.tabs();
     details.shops();
+    details.userEnter();
 })
